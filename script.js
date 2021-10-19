@@ -20,6 +20,7 @@ function reset() {
   player2ScoreBoard.textContent = 0;
   player1Dice.textContent = "-";
   player2Dice.textContent = "-";
+  let player1Turn = true;
 }
 
 // Game Logic
