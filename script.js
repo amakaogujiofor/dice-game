@@ -12,6 +12,16 @@ const resetBtn = document.getElementById("resetBtn");
 const winner = document.getElementById("message");
 const rollBtn2 = document.getElementById("rollBtn2");
 
+function reset() {
+  rollBtn.style.display = "none";
+  rollBtn2.style.display = "none";
+  resetBtn.style.display = "block";
+  player1ScoreBoard.textContent = 0;
+  player2ScoreBoard.textContent = 0;
+  player1Dice.textContent = "-";
+  player2Dice.textContent = "-";
+}
+
 // Game Logic
 rollBtn.addEventListener("click", function () {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -43,16 +53,8 @@ rollBtn2.addEventListener("click", function () {
   }
 });
 
-function reset() {
-  rollBtn.style.display = "none";
-  rollBtn2.style.display = "none";
-  resetBtn.style.display = "block";
-}
-// Winner Logic
-// if (player1Score >= 20) {
-//   message.textContent = "Player 456 has won! 🥳";
-// } else if (player2Score >= 20) {
-//   message.textContent = "Player 218 has won! 🎉";
-// }
+resetBtn.addEventListener("click", function () {
+  reset();
+});
 
 player1Turn = !player1Turn;
