@@ -1,0 +1,55 @@
+body {
+  margin: 150px 10px;
+  text-align: center;
+  background-color: #ffc93c;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  background-color: #feffdf;
+  border: 10px solid #dde0ab;
+  padding: 50px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Typography */
+
+h1 {
+  margin-top: 0;
+  color: #155263;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ff6f3c;
+}
+
+/* Specific Styles */
+
+.dice {
+  background-color: #ff9a3c;
+  margin: 10px;
+  padding: 10px;
+  font-size: larger;
+  font-weight: 900;
+}
+
+button {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #155263;
+  color: #feffdf;
+  border: none;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+#rollBtn {
+  margin: 20px 30px 0px 35px;
+}
