@@ -23,7 +23,19 @@ function reset() {
   let player1Turn = true;
 }
 
+// function start() {
+//   let player1Turn = true;
+//   rollBtn.style.display = "block";
+//   rollBtn2.style.display = "block";
+//   resetBtn.style.display = "block";
+//   player1ScoreBoard.textContent = 0;
+//   player2ScoreBoard.textContent = 0;
+//   player1Dice.textContent = "-";
+//   player2Dice.textContent = "-";
+// }
+
 // Game Logic
+// Player 1Logic
 rollBtn.addEventListener("click", function () {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
   // Taking Turns
@@ -40,6 +52,7 @@ rollBtn.addEventListener("click", function () {
   }
 });
 
+// Player 2Logic
 rollBtn2.addEventListener("click", function () {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
   player2Score += randomNumber;
@@ -56,6 +69,7 @@ rollBtn2.addEventListener("click", function () {
 
 resetBtn.addEventListener("click", function () {
   reset();
+  // start();
 });
 
 player1Turn = !player1Turn;
